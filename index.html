@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+	<title>Jogo da Velha</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <div class="placar">
+        <div class="titulo"> PLACAR </div>
+        <div id="qtd1"></div>
+        <div id="qtd2"></div>
+    </div>
+	
+	<main>
+		<div> <input type="button" class="botao" value="_" disabled><input type="button" class="botao" value="_" disabled><input type="button" class="botao" value="_" disabled> </div>
+		<div> <input type="button" class="botao" value="_" disabled><input type="button" class="botao" value="_" disabled><input type="button" class="botao" value="_" disabled> </div>
+		<div> <input type="button" class="botao" value="_" disabled><input type="button" class="botao" value="_" disabled><input type="button" class="botao" value="_" disabled> </div>
+	</main>
+
+	<input type="button" value="Começar" id="reiniciar" disabled> <h1>Jogador <span id="jogador"></span></h1>
+	<input id="nome1" onchange="verificarNomes()" type="text">
+	<input id="nome2" onchange="verificarNomes()" type="text">
+
+	<script src="velha.js"></script>
+
+</body>
+
+</html>
